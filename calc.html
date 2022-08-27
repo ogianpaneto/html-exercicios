@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inimigo da matemática</title>
+</head>
+
+<body>
+    
+    <h1>CALCULADORA BOSTENHA</h1> 
+    <br />
+    Número 1: <br />
+    <input id="n1" type="number" /> <br />
+    Número 2: <br />
+    <input id="n2" type="number" /> <br /> <br />
+
+    <button onclick="somar()">Somar</button> 
+    <button onclick="subtrair()">Subtrair</button> <br/> <br/>
+
+    O resultado é: <span id='idResult'></span>
+
+</body>
+
+<script>
+    var n1 = document.getElementById('n1')
+    var n2 = document.getElementById('n2')
+    var resultado = document.getElementById('idResult')
+
+    function somar() {
+        resultado.innerText = parseInt(n1.value) + parseInt(n2.value)
+    }
+
+    function subtrair() {
+        resultado.innerText = parseInt(n1.value) - parseInt(n2.value)
+    }
+
+</script>
+
+</html>
